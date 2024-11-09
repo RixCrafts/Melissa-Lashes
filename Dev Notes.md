@@ -76,3 +76,34 @@
 --ft-handwrite: "My Soul", cursive;
 
 ```
+
+## Content
+
+### Cejas + Wax + Henna (Cejas)
+
+**Henna**: Es un pigmento vegetal que se extrae de las hojas secas de la planta *Lawsonia inermis*
+
+Definicion: La henna para cejas es un método natural y semipermanente para teñir las cejas, dándoles una apariencia más definida y poblada.
+
+**Beneficios**: 
+- **Proporciona una coloración natural**: La henna es un pigmento vegetal natural que ayuda a dar un color suave y natural a las cejas. ¿Lo bueno de esto? En comparación con los tintes químicos, la henna no contiene ingredientes agresivos.
+- **Tiene una duración prolongada**: Por lo general, el color de la henna en las cejas puede durar de dos a cuatro semanas, dependiendo del tipo de piel y los cuidados posteriores
+- **Ayuda al fortalecimiento y acondicionamiento**: La henna tiene propiedades acondicionadoras, lo que puede ayudar a fortalecer el vello de las cejas. Ayuda a nutrir los folículos pilosos y promover un crecimiento saludable, lo que tiene como resultado unas cejas más densas.
+- **Distintas opciones de color**: La henna se puede mezclar con otros ingredientes naturales para obtener una amplia gama de tonos y, de esta forma, obtener resultados personalizados y naturales.
+- **Crea efecto de relleno**: Utilizada correctamente, ayuda a rellenar áreas carentes de vello, creando una apariencia más definida y uniforme. Esto es especialmente beneficioso para personas con cejas escasas o con áreas despobladas.
+
+**Wax**: Este procedimiento consiste en aplicar cera tibia sobre el área donde se desea remover el vello, colocando una tira de tela encima y luego retirándola de un tirón rápido en dirección opuesta al crecimiento del vello. La cera arranca el vello desde la raíz, dejando la piel limpia y suave. Este método permite una mayor precisión en la forma de las cejas y puede durar varias semanas antes de que el vello vuelva a crecer.
+
+
+**Beneficios**:
+- **Definición**: La cera para cejas puede ayudar a definir la forma de las cejas y realzar su estructura natural. 
+- **Fijación**: La cera para cejas puede fijar las cejas para lograr un efecto más completo y definido. 
+- **Texturización**: La cera para cejas puede texturizar las cejas y darles volumen. 
+- **Exfoliación**: La cera actúa como exfoliante, eliminando las células muertas y dejando la piel suave y saludable. 
+- **Retardo del crecimiento**: La cera elimina el vello de raíz, lo que debilita el folículo piloso y hace que el pelo crezca más lentamente
+
+### Laminado  & Tint
+
+### Lash Lifting & Tint
+
+**Lash Lifting**: El tratamiento con cera para las pestañas, también conocido como "lash lift," es un procedimiento estético que busca realzar y dar forma a las pestañas naturales sin la necesidad de extensiones. Se aplica una solución especial sobre las pestañas, que las levanta desde la base hacia arriba, creando un efecto de mayor longitud y volumen. Este tratamiento puede durar varias semanas, dependiendo del ciclo natural de crecimiento de las pestañas.

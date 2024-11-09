@@ -124,6 +124,7 @@ header{
     transition: right 0.4s ease;
     z-index: 9;
     padding: 20px;
+    overflow-y: scroll;
 }
 
 .menu-container.active {
@@ -193,4 +194,93 @@ header{
 
 .promotions-container{
     min-height: 20vh;
+    color: var(--clr-info-bg-pink);
 }
+
+.promotions-container > h2{
+    font-family: var(--ft-main);
+    text-align: center;
+    color: var(--clr-banner-bg-platinum);
+    font-size: 1.75rem;
+}
+
+.promotions-container > h3{
+    text-align: center;
+}
+
+.promotions-container > h3 > a{
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.promotions-container > h3 > b{
+    font-family: var(--ft-cursive);
+    font-size: 3rem;
+    color: var(--clr-banner-bg-platinum);
+    margin: 0 10px;
+}
+
+.promotions-container > h4{
+    text-align: center;
+    margin-top: 1rem;
+    font-family: var(--ft-cursive);
+    font-size: 1.5rem;
+    letter-spacing: .15rem;
+    font-weight: 100;
+}
+
+/* END: ----- Promotions ----- */
+
+/* ----- Main ----- */
+main{
+    padding: 1rem 0;
+}
+
+/* ----- Featuring ----- */
+
+.featuring-container{
+    text-align: center;
+    background-color: #fff;
+}
+
+.featuring-container > header > h2{
+    /* font-family: var(--ft-handwrite);
+    font-weight: 100; */
+    background: linear-gradient(90deg, var(--clr-pictures-bg-white) 0% 5%, var(--clr-info-bg-pink)15% 85%, var(--clr-pictures-bg-white)95% 100%);
+}
+
+.featuring{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.featuring-item-container{
+    max-width: 25%;
+}
+
+.featuring-item__img{
+    width: 100%;
+}
+
+.featuring-item-container > a{
+    text-decoration: none;
+}
+
+/* END: ----- Featuring ----- */
+
+/* ----- Service Sections ----- */
+section{
+    background-color: var(--clr-info-bg-pink);
+    padding: 0 .5rem;
+}
+
+section > header > h2{
+    font-family: var(--ft-handwrite);
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: .05rem;
+    padding: .5rem 0;
+}
+
