@@ -7,7 +7,9 @@
     --clr-banner-bg-platinum: #DFDDDDff;
     --clr-featuring-bg-silver: #C1B2ABff;
     --clr-pictures-bg-white: #FFFFFFff;
-    --clr-info-bg-pink: #F2C7D0ff; 
+    --clr-info-bg-pink-light: #fcdbe0;
+    --clr-info-bg-pink: #F2C7D0ff;
+    --clr-info-bg-pink-dark: #E07A8E;
 
     --ft-main: "Nunito", sans-serif;
     --ft-cursive: "Rouge Script", cursive;
@@ -274,6 +276,7 @@ main{
 section{
     background-color: var(--clr-info-bg-pink);
     padding: 0 .5rem;
+    font-size: 16px;
 }
 
 section > header > h2{
@@ -284,3 +287,47 @@ section > header > h2{
     padding: .5rem 0;
 }
 
+.type__description-container{
+    font-family: var(--ft-main);
+    text-align: center;
+    font-size: .8rem;
+}
+
+.type__description-container > span{
+    text-transform: uppercase;
+    color: var(--clr-info-bg-pink-dark);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.type__picture-container{
+    margin: 1rem 0;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 7.5rem;
+}
+
+.benefits{
+    background-color: var(--clr-info-bg-pink-light);
+    border-radius: 5px;
+    text-align: center;
+    padding: .5rem 0;
+    height: 100%;
+    width: 30%;
+    font-size: .75rem;
+    flex-grow: 1;
+    border: 1px solid var(--clr-info-bg-pink-dark);
+}
+
+.benefits > i{
+    font-size: 1.5rem;
+    color: var(--clr-info-bg-pink-dark);
+    margin-bottom: .5rem;
+}
+
+.benefits > h4{
+    font-weight: 800;
+    text-transform: uppercase;
+}

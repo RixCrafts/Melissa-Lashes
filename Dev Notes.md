@@ -92,6 +92,7 @@ Definicion: La henna para cejas es un método natural y semipermanente para teñ
 - **Distintas opciones de color**: La henna se puede mezclar con otros ingredientes naturales para obtener una amplia gama de tonos y, de esta forma, obtener resultados personalizados y naturales.
 - **Crea efecto de relleno**: Utilizada correctamente, ayuda a rellenar áreas carentes de vello, creando una apariencia más definida y uniforme. Esto es especialmente beneficioso para personas con cejas escasas o con áreas despobladas.
 
+
 **Wax**: Este procedimiento consiste en aplicar cera tibia sobre el área donde se desea remover el vello, colocando una tira de tela encima y luego retirándola de un tirón rápido en dirección opuesta al crecimiento del vello. La cera arranca el vello desde la raíz, dejando la piel limpia y suave. Este método permite una mayor precisión en la forma de las cejas y puede durar varias semanas antes de que el vello vuelva a crecer.
 
 
