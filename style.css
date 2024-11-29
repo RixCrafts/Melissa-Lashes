@@ -287,6 +287,8 @@ section > header > h2{
     padding: .5rem 0;
 }
 
+/* ----- Service Description Sections ----- */
+
 .type__description-container{
     font-family: var(--ft-main);
     text-align: center;
@@ -300,7 +302,7 @@ section > header > h2{
     font-size: 1rem;
 }
 
-.type__picture-container{
+.type__info-container{
     margin: 1rem 0;
     padding: 0 1rem;
     display: flex;
@@ -330,4 +332,98 @@ section > header > h2{
 .benefits > h4{
     font-weight: 800;
     text-transform: uppercase;
+}
+
+/* END: ----- Service Description Sections ----- */
+
+/* ----- Service Example Section ----- */
+
+.type-example{
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-pictures-bg-white);
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    max-height: 30rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2px;
+    /* Scroll Snap */
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel-track::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel-slide {
+    min-width: 40%; /* Each image takes half the container */
+    position: relative;
+    scroll-snap-align: center;
+}
+
+.carousel-slide:first-child{
+    margin-left: 30%;
+}
+
+.carousel-slide:last-child{
+    margin-right: 30%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 10px;
+    /* opacity: 0.6; */
+}
+
+/* TODO: Implement CSS for opacity effect */
+
+.carousel-slide-active img{
+    opacity: 1;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: var(--clr-info-bg-pink-dark);
+    opacity: .75;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 0px;
+    border-radius: 25px 5px 5px 25px;
+}
+
+.carousel-button.next {
+    right: 0px;
+    border-radius: 5px 25px 25px 5px;
 }
