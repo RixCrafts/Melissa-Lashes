@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,21 @@
                     <!-- TODO: Replace the 'X' for an closing icon -->
                     <li id="menu-list__close-btn">X</li>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li>About</li>
+                    <!-- <li><a href="pages/about.html">About</a></li> -->
                     <li><a href="#">Services</a></li>
                     <li id="submenu-list-container">
                         <ul class="submenu-list">
-                            <li><a href="#">Cejas + Wax + Henna</a></li>
-                            <li><a href="#">Laminado + Tint</a></li>
-                            <li><a href="#">Lash Lifting + Tint</a></li>
-                            <li><a href="#">Tecnicas 2D YY</a></li>
-                            <li><a href="#">Tecnicas Clasicas</a></li>
-                            <li><a href="#">Tecnicas Mega Volumen</a></li>
-                            <li><a href="#">Tecnicas Volumen</a></li>
+                            <li><a href="#Service_1" target="_self">Cejas + Wax + Henna</a></li>
+                            <li><a href="#Service_2" target="_self">Laminado + Tint</a></li>
+                            <li><a href="#Service_3" target="_self">Lash Lifting + Tint</a></li>
+                            <li><a href="#Service_4" target="_self">Tecnicas 2D YY</a></li>
+                            <li><a href="#Service_5" target="_self">Tecnicas Clasicas</a></li>
+                            <li><a href="#Service_6" target="_self">Tecnicas Mega Volumen</a></li>
+                            <li><a href="#Service_7" target="_self">Tecnicas Volumen</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -55,25 +56,43 @@
         <nav class="top-nav desktop" id="top-nav-desktop">
             <!-- TODO: Implement navegation menu for desktop -->
         </nav>
+
+        <!-- Menu iFrame -->
+
+        <div class="iframe-container">
+            <iframe id="floatingContent" title="Melissa's Lash Studio" src="pages/about.html" frameborder="0" width="100%" height="100%"></iframe>
+            <button type="button">Close</button>
+        </div>
+
+        <!-- END: Menu iFrame -->
+
         <div class="banner-container">
             <div class="banner-content-container">
                 <!-- TODO: Enter the Title text of the page -->
+                 <h1>Melissa's</h1>
+                 <h2>Lash Studio</h2>
+                 <!-- TODO: Implement 'Call' funtionality -->
+                 <!-- TODO: Implement breathing effect -->
+                 <a href="tel:+18136977477">Llama ya!</a>
+                 <br>
+                 <span>Libera tu belleza.<br>Una pestaña a la vez.</span>
             </div>
             <div class="banner-picture-container">
                 <img src="Resources/Biz Pictures/Face.JPG" alt="Picture of the owner of the company with the tools to do the job.">
             </div>
         </div>
         <div class="promotions-container bg-black">
-            <h2>Your eyes deserve to shine.</h2>
-            <h3><a id="promo-booking" href="#">Book today</a><br/> to <b id="promo-gain">get 10% off</b> on <br/>your first lash session!</h3>
-            <h4>Discover the beauty of perfectly crafted lashes with our skilled lash artists.</h4>
+            <h2>Tus ojos merecen brillar.</h2>
+            <!-- TODO: Update 'href' attribute -->
+            <h3><a id="promo-booking" href="#">Reserva hoy</a><br/> y <b id="promo-gain">obtén 10% off</b> en <br/>tu primera sesión!</h3>
+            <h4>Descubre la belleza de unas pestañas perfectamente diseñadas.</h4>
         </div>
     </header>
     <main>
         <section class="featuring-container">
             <header>
                 <h1>Featuring</h1>
-                <h2>Our most loved services</h2>
+                <h2>Nuestros servicios más queridos</h2>
             </header>
             <main class="featuring">
                 <div class="featuring-item-container feature-item-1">
@@ -94,27 +113,27 @@
             </main>
         </section>
         <!-- Cejas + Wax + Henna (Cejas)-->
-        <section class="type">
+        <section class="type" id="Service_1">
             <header>
-                <h2 class="service-title">Wax & Henna</h2>
+                <h2 class="service-title">Wax & Henna <span>(Cejas)</span></h2>
             </header>
             <div class="type__description-container">
                 La <span>henna</span> para cejas es un método natural y semipermanente para teñir las cejas, dándoles una apariencia más definida y poblada.
             </div>
             <div class="type__info-container">
-                <div class="benefits">
+                <div class="info">
                     <!-- Source -->
                     <i class="fa-solid fa-leaf"></i>
                     <h4>Fuente</h4>
                     <p>Tinte a base de pigmento natural de plantas</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Duration -->
                     <i class="fa-solid fa-clock"></i>
                     <h4>Duracion</h4>
                     <p>Duración prolongada <br/> (2 y 4 semanas)</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Main effect -->
                     <i class="fa-solid fa-wand-sparkles"></i>
                     <h4>Efecto</h4>
@@ -126,32 +145,38 @@
                 La <span>cera</span> para cejas es un método natural que usa cera tibia para remover el vello de raiz
             </div>
             <div class="type__info-container">
-                <div class="benefits">
+                <div class="info">
                     <!-- Source -->
                     <i class="fa-solid fa-leaf"></i>
                     <h4>Fuente</h4>
                     <p>Ingredientes naturales y sintéticos</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Duration -->
                     <i class="fa-solid fa-clock"></i>
                     <h4>Duracion</h4>
                     <p>Duración prolongada <br/> (2 y 4 semanas)</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Main effect -->
                     <i class="fa-solid fa-wand-sparkles"></i>
                     <h4>Efecto</h4>
                     <p>Da forma precisa, limpa y suaviza la ceja</p>
                 </div>
             </div>
+
+            <div class="pricing">
+                <a href="/pages/princing.html">
+                    <h3><< Check Our Prices >></h3>
+                </a>
+            </div>
         </section>
         <section class="type-example">
             <div class="carousel-container">
-                <button class="carousel-button prev">&lt;</button>
+                <button class="carousel-button prev" data-service-number="0">&lt;</button>
                 <div class="carousel-track-container">
                     <ul class="carousel-track">
-                        <li class="carousel-slide"><img src="Resources/Cejas + Wax + Henna (Cejas)/Cejas + Wax + Henna (1).JPG" alt="Image 1"></li>
+                        <li class="carousel-slide"><img src="Resources/Cejas + Wax + Henna (Cejas)/Cejas + Wax + Henna (1).JPG" alt="Imagen de ejemplo del servicio"></li>
                         <li class="carousel-slide"><img src="Resources/Cejas + Wax + Henna (Cejas)/Cejas + Wax + Henna (2).JPG" alt="Image 2"></li>
                         <li class="carousel-slide"><img src="Resources/Cejas + Wax + Henna (Cejas)/Cejas + Wax + Henna (3).JPG" alt="Image 3"></li>
                         <li class="carousel-slide"><img src="Resources/Cejas + Wax + Henna (Cejas)/Cejas + Wax + Henna (4).JPG" alt="Image 4"></li>
@@ -161,32 +186,32 @@
                         <li class="carousel-slide"><img src="Resources/Cejas + Wax + Henna (Cejas)/Cejas + Wax + Henna (8).JPG" alt="Image 5"></li>
                     </ul>
                 </div>
-                <button class="carousel-button next">&gt;</button>
+                <button class="carousel-button next" data-service-number="0">&gt;</button>
             </div>
         </section>
         <!-- Laminado + Tint (Cejas)-->
-        <section class="type">
+        <section class="type" id="Service_2">
             <header>
-                <h2 class="service-title">Laminado + Tint (Cejas)</h2>
+                <h2 class="service-title">Laminado + Tint <span>(Cejas)</span></h2>
             </header>
             <div class="type__description-container">
                 <!-- Description -->
                  Description Text
             </div>
             <div class="type__info-container">
-                <div class="benefits">
+                <div class="info">
                     <!-- Source -->
                     <i class="fa-solid fa-leaf"></i>
                     <h4>Fuente</h4>
                     <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Duration -->
                     <i class="fa-solid fa-clock"></i>
                     <h4>Duracion</h4>
                     <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Main effect -->
                     <i class="fa-solid fa-wand-sparkles"></i>
                     <h4>Efecto</h4>
@@ -194,141 +219,280 @@
                 </div>
             </div>
         </section>
+        <section class="type-example">
+            <div class="carousel-container">
+                <button class="carousel-button prev" data-service-number="1">&lt;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="Resources/Laminado + Tint (Cejas)/Lamindo + Tint (1).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Laminado + Tint (Cejas)/Lamindo + Tint (2).JPG" alt="Image 2"></li>
+                        <li class="carousel-slide"><img src="Resources/Laminado + Tint (Cejas)/Lamindo + Tint (3).JPG" alt="Image 3"></li>
+                        <li class="carousel-slide"><img src="Resources/Laminado + Tint (Cejas)/Lamindo + Tint (4).JPG" alt="Image 4"></li>
+                    </ul>
+                </div>
+                <button class="carousel-button next" data-service-number="1">&gt;</button>
+            </div>
+        </section>
+
+        <!-- TODO: Add a contact form -->
+
         <!-- Lash Lifting + Tint (Lashes) -->
-        <section class="type">
+        <section class="type" id="Service_3">
             <header>
-                <h2 class="service-title">Lash Lifting + Tint (Lashes)</h2>
+                <h2 class="service-title">Lifting + Tint <span>(Lashes)</span></h2>
             </header>
             <div class="type__description-container"></div>
             <div class="type__info-container">
-                <div class="benefits">
+                <div class="info">
                     <!-- Source -->
                     <i class="fa-solid fa-leaf"></i>
                     <h4>Fuente</h4>
-                    <p>Ingredientes naturales y sintéticos</p>
+                    <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Duration -->
                     <i class="fa-solid fa-clock"></i>
                     <h4>Duracion</h4>
-                    <p>Duración prolongada <br/> (2 y 4 semanas)</p>
+                    <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Main effect -->
                     <i class="fa-solid fa-wand-sparkles"></i>
                     <h4>Efecto</h4>
-                    <p>Da forma precisa, limpa y suaviza la ceja</p>
+                    <p>Info</p>
                 </div>
+            </div>
+        </section>
+        <section class="type-example">
+            <div class="carousel-container">
+                <button class="carousel-button prev" data-service-number="2">&lt;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="Resources/Lash Lifting + Tint (Lashes)/Lash Lifting + Tint (1).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Lash Lifting + Tint (Lashes)/Lash Lifting + Tint (2).JPG" alt="Image 2"></li>
+                        <li class="carousel-slide"><img src="Resources/Lash Lifting + Tint (Lashes)/Lash Lifting + Tint (3).JPG" alt="Image 3"></li>
+                        <li class="carousel-slide"><img src="Resources/Lash Lifting + Tint (Lashes)/Lash Lifting + Tint (4).JPG" alt="Image 4"></li>
+                        <li class="carousel-slide"><img src="Resources/Lash Lifting + Tint (Lashes)/Lash Lifting + Tint (5).JPG" alt="Image 5"></li>
+                        <li class="carousel-slide"><img src="Resources/Lash Lifting + Tint (Lashes)/Lash Lifting + Tint (6).JPG" alt="Image 5"></li>
+                        <li class="carousel-slide"><img src="Resources/Lash Lifting + Tint (Lashes)/Lash Lifting + Tint (7).JPG" alt="Image 5"></li>
+                        <li class="carousel-slide"><img src="Resources/Lash Lifting + Tint (Lashes)/Lash Lifting + Tint (8).JPG" alt="Image 5"></li>
+                        <li class="carousel-slide"><img src="Resources/Lash Lifting + Tint (Lashes)/Lash Lifting + Tint (9).JPG" alt="Image 5"></li>
+                        <li class="carousel-slide"><img src="Resources/Lash Lifting + Tint (Lashes)/Lash Lifting + Tint (10).JPG" alt="Image 5"></li>
+                    </ul>
+                </div>
+                <button class="carousel-button next" data-service-number="2">&gt;</button>
             </div>
         </section>
         <!-- Tecnicas 2D YY -->
-        <section class="type">
+        <section class="type" id="Service_4">
             <header>
-                <h2 class="service-title">Tecnicas 2D YY</h2>
+                <!-- TODO: Replace 'span' content -->
+                <h2 class="service-title">Tecnicas 2D YY <span>(???)</span></h2>
             </header>
             <div class="type__description-container"></div>
             <div class="type__info-container">
-                <div class="benefits">
+                <div class="info">
                     <!-- Source -->
                     <i class="fa-solid fa-leaf"></i>
                     <h4>Fuente</h4>
-                    <p>Ingredientes naturales y sintéticos</p>
+                    <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Duration -->
                     <i class="fa-solid fa-clock"></i>
                     <h4>Duracion</h4>
-                    <p>Duración prolongada <br/> (2 y 4 semanas)</p>
+                    <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Main effect -->
                     <i class="fa-solid fa-wand-sparkles"></i>
                     <h4>Efecto</h4>
-                    <p>Da forma precisa, limpa y suaviza la ceja</p>
+                    <p>Info</p>
                 </div>
             </div>
         </section>
+        <section class="type-example">
+            <div class="carousel-container">
+                <button class="carousel-button prev" data-service-number="3">&lt;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (1).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (2).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (3).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (4).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (5).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (6).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (7).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (8).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (9).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (10).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (11).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (12).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (13).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas 2D YY/Tecnicas 2D YY (14).JPG" alt="Imagen de ejemplo del servicio"></li>
+                    </ul>
+                </div>
+                <button class="carousel-button next" data-service-number="3">&gt;</button>
+            </div>
+        </section>
+
+        <!-- TODO: Add a contact form -->
+
         <!-- Tecnicas Clasicas -->
-        <section class="type">
+        <section class="type" id="Service_5">
             <header>
-                <h2 class="service-title">Tecnicas Clasicas</h2>
+                <!-- TODO: Replace 'span' content -->
+                <h2 class="service-title">Tecnicas Clasicas <span>(???)</span></h2>
             </header>
             <div class="type__description-container"></div>
             <div class="type__info-container">
-                <div class="benefits">
+                <div class="info">
                     <!-- Source -->
                     <i class="fa-solid fa-leaf"></i>
                     <h4>Fuente</h4>
-                    <p>Ingredientes naturales y sintéticos</p>
+                    <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Duration -->
                     <i class="fa-solid fa-clock"></i>
                     <h4>Duracion</h4>
-                    <p>Duración prolongada <br/> (2 y 4 semanas)</p>
+                    <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Main effect -->
                     <i class="fa-solid fa-wand-sparkles"></i>
                     <h4>Efecto</h4>
-                    <p>Da forma precisa, limpa y suaviza la ceja</p>
+                    <p>Info</p>
                 </div>
+            </div>
+        </section>
+        <section class="type-example">
+            <div class="carousel-container">
+                <button class="carousel-button prev" data-service-number="4">&lt;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (1).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (2).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (3).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (4).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (5).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (6).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (7).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (8).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (9).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (10).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (11).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (12).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Clasicas/Tecnicas Clasicas (13).JPG" alt="Imagen de ejemplo del servicio"></li>
+                    </ul>
+                </div>
+                <button class="carousel-button next" data-service-number="4">&gt;</button>
             </div>
         </section>
         <!-- Tecnicas Mega Volumen -->
-        <section class="type">
+        <section class="type" id="Service_6">
             <header>
-                <h2 class="service-title">Tecnicas Mega Volumen</h2>
+                <!-- TODO: Replace 'span' content -->
+                <h2 class="service-title">Tecnicas Mega Volumen <span>(???)</span></h2>
             </header>
             <div class="type__description-container"></div>
             <div class="type__info-container">
-                <div class="benefits">
+                <div class="info">
                     <!-- Source -->
                     <i class="fa-solid fa-leaf"></i>
                     <h4>Fuente</h4>
-                    <p>Ingredientes naturales y sintéticos</p>
+                    <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Duration -->
                     <i class="fa-solid fa-clock"></i>
                     <h4>Duracion</h4>
-                    <p>Duración prolongada <br/> (2 y 4 semanas)</p>
+                    <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Main effect -->
                     <i class="fa-solid fa-wand-sparkles"></i>
                     <h4>Efecto</h4>
-                    <p>Da forma precisa, limpa y suaviza la ceja</p>
+                    <p>Info</p>
                 </div>
+            </div>
+        </section>
+        <section class="type-example">
+            <div class="carousel-container">
+                <button class="carousel-button prev" data-service-number="5">&lt;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Mega Volumen/Tecnicas Mega Volumen (1).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Mega Volumen/Tecnicas Mega Volumen (2).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Mega Volumen/Tecnicas Mega Volumen (3).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Mega Volumen/Tecnicas Mega Volumen (4).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Mega Volumen/Tecnicas Mega Volumen (5).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Mega Volumen/Tecnicas Mega Volumen (6).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Mega Volumen/Tecnicas Mega Volumen (7).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Mega Volumen/Tecnicas Mega Volumen (8).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Mega Volumen/Tecnicas Mega Volumen (9).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Mega Volumen/Tecnicas Mega Volumen (10).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Mega Volumen/Tecnicas Mega Volumen (11).JPG" alt="Imagen de ejemplo del servicio"></li>
+                </div>
+                <button class="carousel-button next" data-service-number="5">&gt;</button>
             </div>
         </section>
         <!-- Tecnicas Volumen -->
-        <section class="type">
+        <section class="type" id="Service_7">
             <header>
-                <h2 class="service-title">Tecnicas Volumen</h2>
+                <!-- TODO: Replace 'span' content -->
+                <h2 class="service-title">Tecnicas Volumen <span>(???)</span></h2>
             </header>
             <div class="type__description-container"></div>
             <div class="type__info-container">
-                <div class="benefits">
+                <div class="info">
                     <!-- Source -->
                     <i class="fa-solid fa-leaf"></i>
                     <h4>Fuente</h4>
-                    <p>Ingredientes naturales y sintéticos</p>
+                    <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Duration -->
                     <i class="fa-solid fa-clock"></i>
                     <h4>Duracion</h4>
-                    <p>Duración prolongada <br/> (2 y 4 semanas)</p>
+                    <p>Info</p>
                 </div>
-                <div class="benefits">
+                <div class="info">
                     <!-- Main effect -->
                     <i class="fa-solid fa-wand-sparkles"></i>
                     <h4>Efecto</h4>
-                    <p>Da forma precisa, limpa y suaviza la ceja</p>
+                    <p>Info</p>
                 </div>
             </div>
         </section>
+        <section class="type-example">
+            <div class="carousel-container">
+                <button class="carousel-button prev" data-service-number="6">&lt;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (1).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (2).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (3).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (4).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (5).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (6).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (7).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (8).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (9).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (10).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (11).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (12).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (13).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (14).JPG" alt="Imagen de ejemplo del servicio"></li>
+                        <li class="carousel-slide"><img src="Resources/Tecnicas Volumen/Tecnicas Volumen (15).JPG" alt="Imagen de ejemplo del servicio"></li>
+                    </ul>
+                </div>
+                <button class="carousel-button next" data-service-number="6">&gt;</button>
+            </div>
+        </section>
     </main>
+    <footer>
+        <!-- TODO: Implement Footer -->
+    </footer>
 </body>
 </html>

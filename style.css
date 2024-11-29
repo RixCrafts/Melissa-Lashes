@@ -149,6 +149,10 @@ header{
     font-size: .75rem;
 }
 
+.submenu-list > li > a{
+    scroll-behavior: smooth;
+}
+
 /* TODO: Implement hover effect */
 
 .menu-list li {
@@ -168,6 +172,38 @@ header{
 
 /* END: ----- Nav tag for mobile version ----- */
 
+/* ----------------------- iFrame ------------------------- */
+
+.iframe-container{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 90vw;
+    height: 90vh;
+    margin-top: 1vh;
+    margin-left: 5vw;
+    border: 3px solid var(--clr-info-bg-pink-dark);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.iframe-container > iframe{
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.iframe-container > button{
+    outline: 1px solid blue;
+    width: 100%;
+}
+
+.iframeVisible{
+    display: block;
+}
+
+/* END: -------------------iFrame ------------------------- */
+
 /* ------ Banner ------ */
 
 .banner-container{
@@ -178,6 +214,60 @@ header{
 
 .banner-content-container{
     min-width: 50%;
+    font-family: var(--ft-cursive);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content-container > h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-top: 2rem;
+}
+
+.banner-content-container > h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.banner-content-container > a{
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--ft-main);
+    /* border: 2px solid var(--clr-info-bg-pink-light); */
+    background-color: var(--clr-info-bg-pink-dark);
+    border-radius: 30px;
+    padding: .5rem .75rem;
+    max-width: 9rem;
+    color: var(--clr-info-bg-pink-light);
+    font-size: 1.5rem;
+    animation: breathing 2s infinite;
+}
+
+@keyframes breathing {
+    0% {
+        box-shadow: 0 0 5px var(--clr-info-bg-pink-dark), 0 0 10px var(--clr-info-bg-pink-dark), 0 0 15px var(--clr-info-bg-pink-dark);
+    }
+    50% {
+        box-shadow: 0 0 15px var(--clr-info-bg-pink-dark), 0 0 25px var(--clr-info-bg-pink-dark), 0 0 35px var(--clr-info-bg-pink-dark);
+    }
+    100% {
+        box-shadow: 0 0 5px var(--clr-info-bg-pink-dark), 0 0 10px var(--clr-info-bg-pink-dark), 0 0 15px var(--clr-info-bg-pink-dark);
+    }
+}
+
+.banner-content-container > span{
+    font-family: var(--ft-main);
+    text-align: center;
+    font-size: .9rem;
 }
 
 .banner-picture-container{
@@ -275,7 +365,7 @@ main{
 /* ----- Service Sections ----- */
 section{
     background-color: var(--clr-info-bg-pink);
-    padding: 0 .5rem;
+    padding: .5rem .5rem;
     font-size: 16px;
 }
 
@@ -285,6 +375,24 @@ section > header > h2{
     text-align: center;
     letter-spacing: .05rem;
     padding: .5rem 0;
+}
+
+section > header > h2 > span{
+    color: var(--clr-info-bg-pink-dark);
+}
+
+section > .pricing{
+    text-align: center;
+    padding: .75rem;
+    border: 2px solid var(--clr-info-bg-pink-dark);
+    background-color: var(--clr-info-bg-pink-light);
+    border-radius: 5px 5px 30px 30px;
+    animation: breathing 2s infinite;
+}
+
+section > .pricing > a{
+    text-decoration: none;
+    color: var(--clr-info-bg-pink-dark);
 }
 
 /* ----- Service Description Sections ----- */
@@ -311,25 +419,26 @@ section > header > h2{
     min-height: 7.5rem;
 }
 
-.benefits{
+.info{
     background-color: var(--clr-info-bg-pink-light);
     border-radius: 5px;
     text-align: center;
-    padding: .5rem 0;
-    height: 100%;
+    padding: .5rem .5rem;
+    margin: 0 1px;
+    min-height: 100%;
     width: 30%;
     font-size: .75rem;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     border: 1px solid var(--clr-info-bg-pink-dark);
 }
 
-.benefits > i{
+.info > i{
     font-size: 1.5rem;
     color: var(--clr-info-bg-pink-dark);
     margin-bottom: .5rem;
 }
 
-.benefits > h4{
+.info > h4{
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -360,7 +469,7 @@ section > header > h2{
     transition: transform 0.5s ease-in-out;
     list-style: none;
     max-height: 30rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;

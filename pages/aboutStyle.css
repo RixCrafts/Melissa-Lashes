@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+
+:root{
+    --clr-promo-bg-black: #000000ff;
+    --clr-banner-bg-platinum: #DFDDDDff;
+    --clr-featuring-bg-silver: #C1B2ABff;
+    --clr-pictures-bg-white: #FFFFFFff;
+    --clr-info-bg-pink-light: #fcdbe0;
+    --clr-info-bg-pink: #F2C7D0ff;
+    --clr-info-bg-pink-dark: #E07A8E;
+
+    --ft-main: "Nunito", sans-serif;
+    --ft-cursive: "Rouge Script", cursive;
+    --ft-handwrite: "My Soul", cursive;
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(252, 219, 224, .9);
+    max-width: 100vw;
+    max-height: 100vh;
+}
